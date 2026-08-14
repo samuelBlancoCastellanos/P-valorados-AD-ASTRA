@@ -1,0 +1,13 @@
+# Dependencias de generador.py (CODEFEST AD ASTRA 2026 — Etapa 1).
+# La organización indicó que la evaluación corre con Python >= 3.9.5 y el
+# stack recomendado FAISS + Sentence Transformers + modelos abiertos de
+# Hugging Face; estas son las versiones exactas con las que se generó y
+# verificó resultados.jsonl. Versiones cercanas también funcionan: el código
+# no usa API interna de ninguna de ellas.
+faiss-cpu==1.15.0
+sentence-transformers==5.7.0
+torch==2.13.0
+numpy==2.5.2
+# Solo necesario si el archivo de consultas llega en PDF (el generador acepta
+# txt/jsonl/csv sin esta dependencia):
+pymupdf==1.28.2
